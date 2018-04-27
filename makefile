@@ -9,11 +9,11 @@ RM      = rm -rf
 
 default: all
 
-all: Helloworld
+all: main
 
-Helloworld: Helloworld.cpp
-	$(CC) $(CCFLAGS) -o Helloworld Helloworld.cpp
+main: main.cpp
+	$(CC) $(CCFLAGS) -o main main.cpp
 	@echo "Build complete"
 clean:
-	$(RM) *.dSYM *.out Helloworld
+	$(RM) *.dSYM *.out main
 	@echo "Clean complete"
